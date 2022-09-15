@@ -1,0 +1,11 @@
+const contractAddress = '0x2166917f03A684E64f6F3CF3111c982fea57211F';
+
+const transformTeamData = (teamData) => {
+    return {
+      teamNumber: teamData.teamIndex,
+      teamName: teamData.teamName,
+      imageURI: teamData.imageURI,
+    };
+};
+
+export {contractAddress, transformTeamData};
